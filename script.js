@@ -215,7 +215,7 @@ function exportPDF() {
   const html = `
     <div style="font-family: Arial, sans-serif; padding: 20px;">
       <h1 style="text-align: center; color: #333; margin-bottom: 30px;">
-        📊 Bestellungsübersicht
+        📊 Bestellübersicht
       </h1>
       
       <div style="margin-bottom: 20px; color: #666;">
@@ -225,8 +225,8 @@ function exportPDF() {
       <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
         <thead>
           <tr style="background: #f8f9fa;">
-            <th style="border: 1px solid #dee2e6; padding: 10px; text-align: left;">OZ (Item)</th>
-            <th style="border: 1px solid #dee2e6; padding: 10px; text-align: left;">Shorttext</th>
+            <th style="border: 1px solid #dee2e6; padding: 10px; text-align: left;">Item-ID</th>
+            <th style="border: 1px solid #dee2e6; padding: 10px; text-align: left;">Kurztext</th>
             <th style="border: 1px solid #dee2e6; padding: 10px; text-align: right;">Menge</th>
             <th style="border: 1px solid #dee2e6; padding: 10px; text-align: right;">Einzelpreis</th>
             <th style="border: 1px solid #dee2e6; padding: 10px; text-align: right;">Gesamtpreis</th>
