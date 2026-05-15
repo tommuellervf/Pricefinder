@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bestellungen + Preise Matcher</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+    <title>Bestellungen + Preise</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>📊 Bestellungen + Preise Matcher</h1>
+      <h1>📊 Bestellungen + Preise</h1>
 
       <div class="upload-section">
         <div
           class="upload-box"
           onclick="document.getElementById('bolFile').click()"
         >
-          <h3>📋 Bestellungen (BOL)</h3>
+          <h3>📋 Bestellungen (BOL/BOM)</h3>
           <p>Excel-Datei mit Bestellungen</p>
           <button class="btn">Datei auswählen</button>
           <input type="file" id="bolFile" accept=".xlsx,.xls" />
@@ -28,7 +29,7 @@
           class="upload-box"
           onclick="document.getElementById('priceFile').click()"
         >
-          <h3>💰 Preisliste (SAPUI5)</h3>
+          <h3>💰 Preisliste</h3>
           <p>Excel-Datei mit Preisen</p>
           <button class="btn">Datei auswählen</button>
           <input type="file" id="priceFile" accept=".xlsx,.xls" />
@@ -56,8 +57,8 @@
           <thead>
             <tr>
               <th>Dienstleister</th>
-              <th>OZ (Item)</th>
-              <th>Shorttext</th>
+              <th>Item-ID</th>
+              <th>Kurztext</th>
               <th class="number">Menge</th>
               <th class="number">Einzelpreis</th>
               <th class="number">Gesamtpreis</th>
